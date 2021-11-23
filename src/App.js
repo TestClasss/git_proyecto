@@ -6,7 +6,6 @@ import NotFound from './pages/NotFound/NotFound';
 import RedirectUser from './pages/redirect/redirect';
 import Private from './Components/PrivateRoute/PrivateRoute';
 
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
@@ -15,6 +14,7 @@ import Create from './pages/Create/Create';
 // import {  } from ''
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>        

@@ -38,11 +38,11 @@ services.verifyToken = async (token) => {
     return {};
 }
 
-services.create = async (title, description, image) => {
+services.create = async (title, description, image, token) => {
     const response = await fetch(`${BASE_URL}/post/create`, {
         method: "POST",
         headers: {
-            "Content-type": "application/json"
+            "Authorization": `Bearer ${token}`
         },
         body: JSON.stringify({
             title: title,

@@ -50,6 +50,10 @@ export const UserProvider = (props) => {
         return loginAsync();
     }, [])
 
+    
+
+    
+
     const logout = useCallback(() => {
         setUser(undefined);
         setTokenAll(undefined);
