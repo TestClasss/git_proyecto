@@ -33,6 +33,9 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
     },
+    fontFamily:{
+      RobotoSlab: ["Roboto Slab", "serif"]
+    }
   },
   variants: {},
   plugins: [],
