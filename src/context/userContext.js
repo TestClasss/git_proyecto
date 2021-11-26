@@ -80,3 +80,4 @@ export const useUserContext = () => {
 }
 
 export const getToken = () => localStorage.getItem(TOKEN_KEY);
+
