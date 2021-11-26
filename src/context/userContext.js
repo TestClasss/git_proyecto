@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
-import userService from './../services/UserServices';
+import userService from '../services/UserServices';
 
 const UserContext = React.createContext();
 const TOKEN_KEY = "token";

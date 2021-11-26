@@ -30,30 +30,31 @@ export default function Login() {
     }
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-green-400 to-blue-500">
+        <div className="flex justify-center items-center min-h-screen bg-gradient-to-bl from-emerald-400 to-indigo-800">
             <main className="w-3/4 max-w-3xl bg-blue-100 rounded-md p-8 md:p-10 shadow-md">
                 <form onSubmit={onSubmitHandler} className="flex flex-col gap-4 items-center justify-center">
-                    <h2 className="uppercase text-gray-800 font-monserrat font-black text-4xl mb-4">Prograweb</h2>
+                    <h2 className="text-gray-800 font-monserrat font-black text-4xl">Proyecto Final</h2>
+                    <h3 className="-mt-4 p-0 font-monserrat text-gray-800 font-bold min-w-max"> Programación Web</h3>
 
-                    {error && <p className="w-full rounded p-3 text-center text-white font-roboto bg-red-700 select-none">
-                        Un error ha ocurrido en el inicio de sesión
+                    {error && <p className="w-full rounded p-3 text-center text-yellow-800 font-roboto bg-amber-300 select-none">
+                        Ha ocurrido un error. Por favor, revisa tus credenciales y vuelve a intentarlo
                     </p>}
 
                     <input className="font-medium w-full text-gray-700 focus:outline-none focus:ring focus:border-gray-700 p-2 rounded"
                         type='text'
                         value={username}
-                        placeholder='e.g. username'
+                        placeholder='Usuario'
                         onChange={(e) => onChange(e, setUsername)}
                     />
 
                     <input className="font-medium w-full text-gray-700 focus:outline-none focus:ring focus:border-gray-700 p-2 rounded"
                         type="password"
-                        placeholder="e.g password"
+                        placeholder="Contraseña"
                         onChange={(e) => onChange(e, setPassword)}
                         value={password}
                     />
 
-                    <button className="mt-6 w-full transition rounded border border-blue-500 duration-300 ease-in-out text-xl text-extrabold uppercase bg-blue-500 hover:bg-blue-700 py-2 px-4 text-gray-100">Sign In </button>
+                    <button className="mt-6 w-full transition rounded border border-blue-500 duration-300 ease-in-out text-xl text-extrabold uppercase bg-blue-500 hover:bg-blue-700 py-2 px-4 text-gray-100">Ingresar</button>
                 </form>
             </main>
         </div>
