@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 
-import { useUserContext } from '../../context/UserContext';
+import { useUserContext } from '../../context/userContext';
 
 export default function Login() {
     const { login, token } = useUserContext();
