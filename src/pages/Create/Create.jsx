@@ -31,7 +31,7 @@ const navigate = useNavigate();
 return (
     <div>
         <form onSubmit={onSubmitHandler}>
-            <h2>create</h2>
+            <h2>Crea una nueva publicacion!</h2>
             <input 
                 type="text"
                 placeholder="tittle"

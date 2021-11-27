@@ -79,4 +79,5 @@ export const useUserContext = () => {
     return context;
 }
 
-const getToken = () => localStorage.getItem(TOKEN_KEY);
+export const getToken = () => localStorage.getItem(TOKEN_KEY);
+
