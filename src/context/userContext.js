@@ -23,7 +23,6 @@ export const UserProvider = (props) => {
 
         verifyTokenAsync();
     }, [token])
-
     const setTokenAll = (token) => {
         localStorage.setItem(TOKEN_KEY, token);
         setToken(token);
