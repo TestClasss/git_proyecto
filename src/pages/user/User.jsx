@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-import { useUserContext } from '../../context/userContext'
-import { useNavigate } from 'react-router-dom'
-
-=======
-import { useUserContext } from '../../context/UserContext';
+import { useUserContext } from '../../context/userContext';
 import { useNavigate } from 'react-router-dom';
 import {Post} from '../../Components/Post/Post'
->>>>>>> d962972b15f4b4850cc836e5a1f89307f368c0b8
+
 
 export default function User() {
     const navigate = useNavigate()
