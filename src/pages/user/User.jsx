@@ -1,4 +1,4 @@
-import { useUserContext } from '../../context/UserContext'
+import { useUserContext } from '../../context/userContext'
 import { useNavigate } from 'react-router-dom'
 
 
