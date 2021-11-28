@@ -28,40 +28,41 @@ const onSubmitHandler =  async (e) => {
 const navigate = useNavigate();
 
 
-return (
-    <div>
-        <form onSubmit={onSubmitHandler}>
-            <h2>Crea una nueva publicacion!</h2>
-            <input 
-                type="text"
-                placeholder="tittle"
-                value={tittle}
-                onChange={(e) => onChange(e, newTittle)}
-            
-            />
-            <input 
-                type="text"
-                placeholder="description"
-                value={description}
-                onChange={(e) => onChange(e, newDescription)}
-            
-            />
-            <input 
-                type="text"
-                placeholder="image"
-                value={image}
-                onChange={(e) => onChange(e, newImage)}
-            
-            />
+return (    
+    <div className = "border border-red-500 w-screen h-screen py-20 px-10">
+        <div className ="border border-blue-500 h-full">
+            <form onSubmit={onSubmitHandler}>
+                <h2>Crea una nueva publicacion!</h2>
+                <input 
+                    type="text"
+                    placeholder="tittle"
+                    value={tittle}
+                    onChange={(e) => onChange(e, newTittle)}
+                    
+                    />
+                <input 
+                    type="text"
+                    placeholder="description"
+                    value={description}
+                    onChange={(e) => onChange(e, newDescription)}
+                    
+                    />
+                <input 
+                    type="text"
+                    placeholder="image"
+                    value={image}
+                    onChange={(e) => onChange(e, newImage)}
+                    
+                    />
 
-            <button type="submit">create</button>
+                <button type="submit">create</button>
 
+                
+            </form>
+                <button onClick={() => navigate('/admin')} className='bg-red-900'>back</button>
             
-        </form>
-            <button onClick={() => navigate('/admin')} className='bg-red-900'>back</button>
-        
-    </div>
-    
+        </div>
+    </div>   
 )
 
 
