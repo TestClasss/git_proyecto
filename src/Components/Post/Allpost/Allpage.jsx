@@ -1,9 +1,17 @@
 
 import { useNavigate } from 'react-router-dom'
 import Allpostcard from './Allpostcard';
+import { useUserContext } from '../../../context/userContext';
+
 
 const Userpost = ({post = []}) => { 
     const navigate = useNavigate();
+    const { logout } = useUserContext()
+
+    const logoutHandler = () => {
+      logout()
+      navigate("/login")
+  }
     return (
     <section className="flex flex-col justify-center items-center min-h-screen min-w-scren">
     <div className="p-11 w-11/12 lg:w-1/2 h-max flex flex-col justify-around items-center bg-gradient-to-tr from-bluegray-50 to-warmgray-50 shadow-md">
@@ -23,7 +31,7 @@ const Userpost = ({post = []}) => {
         })
       }
       
-          {/* <button onClick={() => navigate('/admin')} className='bg-red-900'>back</button> */}
+          <button onClick={() => logoutHandler()} className='bg-red-900'>back</button>
     </div>
     </section>
     );
