@@ -20,7 +20,7 @@ export default function Allowned() {
   const gettoken = localStorage.getItem("token");
 
   let [page, setPage] = useState(0);
-  const [post, setPost] = useState([]);
+  let [post, setPost] = useState([]);
 
   const nextPage = () => {
     setPage((page += 1));
@@ -71,6 +71,7 @@ export default function Allowned() {
               image={post.image}
               description={post.description}
               likes={post.likes}
+              comments={post.comments}
               user={post.user}
             />
           );
