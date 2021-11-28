@@ -19,7 +19,14 @@ const Toogle = ({identifier, active}) => {
 
 return (
     
-    <BsFillEyeSlashFill onClick={data} className={`cursor-pointer ${temporal ? "text-gray-700": "text-red-700"}`} />
+    temporal?
+                <span>
+                    <BsFillEyeSlashFill onClick={data} className="cursor-pointer text-gray-400 text-opacity-50 hover:text-red-600 hover:text-opacity-1 transition-all transform hover:scale-125"/>
+                </span> :
+                <span>
+                    <BsFillEyeSlashFill onClick={data} className="cursor-pointer text-red-600 transition-all hover:text-gray-400 transform hover:scale-125"/>
+
+                </span>
    
     
 

@@ -25,7 +25,7 @@ const Card = ({identify, post, image, date, description, likes=[], user, active 
                 <Icon type="comment"></Icon>
                 <Icon type="fav"></Icon> */}
                 <AiFillHeart className="text-red-600 transition-all transform hover:scale-125"/><p>{likes.length}</p>
-                <Icon type="edit" ></Icon>
+                <FiEdit className="cursor-pointer text-gray-400 text-opacity-50 hover:text-red-600 hover:text-opacity-1 transition-all transform hover:scale-125"/>
                 <Toogle identifier={identify}
                 active = {active}/>
                 
