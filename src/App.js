@@ -12,7 +12,7 @@ import './App.css';
 import Create from './pages/Create/Create';
 import Update from './pages/Update/Update';
 import Owned from './pages/Owned/Owned';
-import {ownedServices} from './services/ownerServices';
+
 // import {  } from ''
 
 function App() {
