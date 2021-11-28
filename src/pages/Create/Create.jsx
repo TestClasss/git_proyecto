@@ -1,4 +1,4 @@
-import { useUserContext } from '../../context/UserContext'
+import { useUserContext } from '../../context/userContext'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import  usecreate from '../../services/create'
@@ -25,9 +25,8 @@ const onSubmitHandler =  async (e) => {
    
 }
 
-const onhandler = () => {
-    toast.error('Error al crear el post')
-}
+const navigate = useNavigate();
+
 
 return (
     <div>
@@ -56,11 +55,13 @@ return (
             />
 
             <button type="submit">create</button>
-            
+
             
         </form>
+            <button onClick={() => navigate('/admin')} className='bg-red-900'>back</button>
         
     </div>
+    
 )
 
 

@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import { useUserContext } from '../../context/UserContext';
 import { useNavigate } from 'react-router-dom';
 import {Post} from '../../Components/Post/Post'
+=======
+import { useUserContext } from '../../context/userContext'
+import { useNavigate } from 'react-router-dom'
+
+>>>>>>> main
 
 export default function User() {
     const navigate = useNavigate()
