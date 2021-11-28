@@ -1,4 +1,4 @@
-import { useUserContext } from './../../context/userContext';
+import { useUserContext } from '../../context/userContext';
 import { Navigate } from 'react-router-dom';
 
 const PrivateRoute = ({role="user", children }) => {
