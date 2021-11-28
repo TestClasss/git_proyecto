@@ -8,15 +8,18 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useowned } from '../../services/owned';
 import Card from "./Card";
 import NavButton from "../../Components/Post/Allpost/NavButton/NavButton";
+import { data } from 'autoprefixer';
 
 
 export default function Owned() {
 
-const {token } = useUserContext();
+
 const limit = 10;
 const gettoken = localStorage.getItem('token');
 
 const [post, setPost] = useState([]);
+
+const [helper, updateHelper] = useState(0);
 let [page, setPage] = useState(0);
 const nextPage = () => {
     setPage((page += 1));
@@ -29,7 +32,9 @@ const nextPage = () => {
     }
   };
 
-
+  const actualizarHandler = () => {
+    updateHelper(helper + 1);
+  };
 
 
 
@@ -41,6 +46,12 @@ const onSubmitHandler =  async () => {
     const data =  await useowned(limit, page, gettoken );
     
     setPost(data);
+    
+    console.log(data.map(post => post.description));
+    
+
+    
+    
     }
     
    
@@ -53,7 +64,7 @@ const onSubmitHandler =  async () => {
     
 };
 onSubmitHandler();
-}, [page])
+}, [page,helper ])    
 
 
 
@@ -84,7 +95,11 @@ return (
           <NavButton direction="L" changePage={previousPage}/>
           <NavButton direction="R" changePage={nextPage}/>
         </span>
+       
+       <button onClick= {actualizarHandler} className="fixed bottom-20 right-2 w-max transition rounded border border-blue-500 duration-300 ease-in-out lg:text-lg text-sm text-extrabold bg-blue-500 hover:bg-blue-600 py-2 px-4 text-white">Actualizar</button>
+       
        <button onClick= {() => navigate('/admin')} className="fixed bottom-5 right-2 w-max transition rounded border border-blue-500 duration-300 ease-in-out lg:text-lg text-sm text-extrabold bg-blue-500 hover:bg-blue-600 py-2 px-4 text-white">Regresar</button>
+
     </div>
 </section>
             
