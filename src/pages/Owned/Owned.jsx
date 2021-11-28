@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useowned } from '../../services/owned';
 import Card from "./Card";
-import NavButton from "../../Components/Post/Allpost/NavButton/NavButton";
+import NavButton from "../../Components/NavButton/NavButton";
 
 
 export default function Owned() {
