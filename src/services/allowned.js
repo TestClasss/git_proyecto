@@ -1,13 +1,5 @@
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-
-
 const BASE_URL = "https://posts-pw2021.herokuapp.com/api/v1/post/all";
-toast.success('Post created successfully');
-const showalert = () => {
-    <ToastContainer/>
-}
+
 export const useallowned = async (limit, page, token) => {
     
 const response = await fetch(`${BASE_URL}?limit=${limit}&page=${page}`, {

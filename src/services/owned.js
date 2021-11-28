@@ -1,6 +1,3 @@
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 
 
 const BASE_URL = "https://posts-pw2021.herokuapp.com/api/v1/post/owned";
