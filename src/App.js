@@ -12,7 +12,12 @@ import './App.css';
 import Create from './pages/Create/Create';
 import Update from './pages/Update/Update';
 import Owned from './pages/Owned/Owned';
+<<<<<<< HEAD
 
+=======
+import {ownedServices} from './services/ownerServices';
+import Allowned from './Components/Post/Allpost/Allpost';
+>>>>>>> c145c55d155a61a58ff7988304e50e03f407a5ce
 // import {  } from ''
 
 function App() {
@@ -26,7 +31,7 @@ function App() {
         <Route path="/redirect" element={<RedirectUser />}/>
         
         <Route path="/admin"  element={<Private role="admin"><Admin /></Private>} />
-        <Route path="/user"   element={<Private role="user"> <User /> </Private>} />
+        <Route path="/user"   element={<Private role="user"> <Allowned /> </Private>} />
         <Route path="/Create"  element={<Private role="admin"><Create /></Private>} />
         <Route path="/Update"  element={<Private role="admin"><Update /></Private>} />
         <Route path="/Owned"  element={<Private role="admin"><Owned  /></Private>} />
