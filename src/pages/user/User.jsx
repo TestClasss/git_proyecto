@@ -35,6 +35,18 @@ export default function User() {
                     tittle = "The Elder Scrolls V"
                     desc = "Skyrim"
                 />
+                <Post  
+                    owner = "User 4"
+                    url = "https://www.tonica.la/__export/1601829332328/sites/debate/img/2020/10/04/gta-v-portada_1.jpg_463833556.jpg"
+                    tittle = "GTA V"
+                    desc = "Rockstar Games"
+                />
+                <Post  
+                    owner = "User 5"
+                    url = "http://pm1.narvii.com/6949/8f66718b4cbd790911a0b69fc064af0f373289ecr1-1024-982v2_uhq.jpg"
+                    tittle = "Hitler-san "
+                    desc = "Sitler siendo tan humildee como siempre"
+                />
             </div>
         </section>
     )

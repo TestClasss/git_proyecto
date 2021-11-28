@@ -3,9 +3,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const BASE_URL = "https://posts-pw2021.herokuapp.com/api/v1/post/owned";
-
-export const useowned = async (limit, page, token) => {
+const BASE_URL = "https://posts-pw2021.herokuapp.com/api/v1/post/all";
+toast.success('Post created successfully');
+const showalert = () => {
+    <ToastContainer/>
+}
+export const useallowned = async (limit, page, token) => {
     
 const response = await fetch(`${BASE_URL}?limit=${limit}&page=${page}`, {
   "method": "GET",
@@ -27,4 +30,3 @@ const response = await fetch(`${BASE_URL}?limit=${limit}&page=${page}`, {
     
     return arreyPost;
 };
-
