@@ -46,7 +46,7 @@ const onSubmitHandler =  async () => {
     const data =  await useowned(limit, page, gettoken );
     
     setPost(data);
-    
+    console.log(data)
     console.log(data.map(post => post.description));
     
 
