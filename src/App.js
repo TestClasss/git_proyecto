@@ -17,7 +17,8 @@ import Allowned from './Components/Post/Allpost/Allpost';
 // import {  } from ''
 
 function App() {
-  const [Post, setPost] = useState([]);
+  
+  
   
   return (
     <BrowserRouter>
