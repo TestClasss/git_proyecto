@@ -15,8 +15,8 @@ const Allpostcard = ({identify, post, image, date, description, likes=[], user }
                 <Icon type="fav"></Icon>
             </div>
 
-            <p className = "font-RobotoSlab lg:text-2xl">{post}</p>
-            <p className ="font-RobotoSlab font-light lg:text-lg text-xs mt-2">{description}</p>
+            <p className = "font-RobotoSlab lg:text-2xl truncate">{post}</p>
+            <p className ="font-RobotoSlab font-light lg:text-lg text-xs mt-2 overflow-ellipsis overflow-hidden">{description}</p>
         </div>
         
     );

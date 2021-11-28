@@ -24,6 +24,7 @@ export default function Allowned() {
 
   const nextPage = () => {
     setPage((page += 1));
+    document.documentElement.scrollTop = 0
   };
   const previousPage = () => {
     if (page > 0) {
@@ -31,6 +32,7 @@ export default function Allowned() {
     } else {
       setPage((page = 0));
     }
+    document.documentElement.scrollTop = 0
   };
 
   useEffect(() => {
@@ -54,6 +56,12 @@ export default function Allowned() {
         <h2 className="text-5xl lg:text-6xl font-extrabold text-gray-800 text-center">
           All post
         </h2>
+        <div className ="flex pt-6">
+        <NavButton direction="L" changePage={previousPage}/>
+        <p className = "text-xl px-4 py-2 h-max w-max m-0 text-blue-400 bg-white rounded shadow text-center"> {page + 1} </p>
+        <NavButton direction="R" changePage={nextPage}/>
+        </div>
+
         {post.map((post) => {
           return (
             <Allpostcard
