@@ -9,9 +9,6 @@ export const Post = (props) => {
             <div className ="w-max right-8 mt-1  flex flex-row-reverse absolute lg:text-4xl gap-2">
         
             <div className ="w-max right-8 mt-1  flex flex-row absolute lg:text-4xl gap-2">
-            {/* <IoBookmarkSharp id="Favorite" className="cursor-pointer text-gray-400 text-opacity-50 hover:text-yellow-600 transition-all transform hover:scale-125" ></IoBookmarkSharp>
-            <AiOutlineMessage id="Message" className="cursor-pointer text-gray-400 text-opacity-50 hover:text-black transition-all transform hover:scale-125" ></AiOutlineMessage>
-            <AiTwotoneHeart className="cursor-pointer text-gray-400 text-opacity-50 hover:text-red-500 transition-all transform hover:scale-125" ></AiTwotoneHeart> */}
             <Icon type="like"></Icon>
             <Icon type="comment"></Icon>
             <Icon type="fav"></Icon>
