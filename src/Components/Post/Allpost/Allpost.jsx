@@ -2,6 +2,7 @@ import { useUserContext } from "../../../context/userContext";
 import { useState, useEffect } from "react";
 import { useallowned } from "../../../services/allowned";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 import Allpostcard from "./Allpostcard";
 import NavButton from "./NavButton/NavButton";
@@ -52,6 +53,7 @@ export default function Allowned() {
 
   return (
     <section className="flex flex-col justify-center items-center min-h-screen min-w-scren">
+        <><ToastContainer/></>
       <div className="lg:p-11 pt-8 pb-16 lg:w-1/2 w-full h-max flex flex-col justify-around items-center bg-gradient-to-tr from-bluegray-50 to-warmgray-50 shadow-md">
         <h2 className="text-5xl lg:text-6xl font-extrabold text-gray-800 text-center">
           All post
@@ -71,6 +73,7 @@ export default function Allowned() {
               image={post.image}
               description={post.description}
               likes={post.likes}
+              comments={post.comments}
               user={post.user}
             />
           );
