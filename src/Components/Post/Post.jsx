@@ -1,11 +1,7 @@
-import { useNavigate } from 'react-router-dom'
 import Icon from './Icon/Icon';
 import {Comments} from './Comments/Comments';
-import { useState } from 'react';
 
 const Post = ({identify, post, image, date, description, comments=[], likes=[], user }) => {
-    
-    const navigate = useNavigate();
 
     return (
         <div className ="w-9/12 p-8 rounded-xl shadow-xl border border-coolgray-400 my-6 bg-white relative">
@@ -20,7 +16,7 @@ const Post = ({identify, post, image, date, description, comments=[], likes=[], 
 
             <p className = "font-RobotoSlab lg:text-2xl truncate">{post}</p>
             <p className ="font-RobotoSlab font-light lg:text-lg text-xs mb-2 text-truegray-600 overflow-ellipsis overflow-hidden">{description}</p>
-            <Comments content = {comments}/>
+            <Comments content = {comments} postID = {identify}/>
         </div>
         
     );
