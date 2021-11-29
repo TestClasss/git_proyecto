@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/git_proyecto/static/css/main.d6205ac6.chunk.css",
-    "main.js": "/git_proyecto/static/js/main.7d87c66c.chunk.js",
-    "main.js.map": "/git_proyecto/static/js/main.7d87c66c.chunk.js.map",
-    "runtime-main.js": "/git_proyecto/static/js/runtime-main.fbc92494.js",
-    "runtime-main.js.map": "/git_proyecto/static/js/runtime-main.fbc92494.js.map",
-    "static/css/2.7f2ec892.chunk.css": "/git_proyecto/static/css/2.7f2ec892.chunk.css",
-    "static/js/2.dc0bfc3a.chunk.js": "/git_proyecto/static/js/2.dc0bfc3a.chunk.js",
-    "static/js/2.dc0bfc3a.chunk.js.map": "/git_proyecto/static/js/2.dc0bfc3a.chunk.js.map",
-    "static/js/3.f5a0577d.chunk.js": "/git_proyecto/static/js/3.f5a0577d.chunk.js",
-    "static/js/3.f5a0577d.chunk.js.map": "/git_proyecto/static/js/3.f5a0577d.chunk.js.map",
-    "index.html": "/git_proyecto/index.html",
-    "static/css/2.7f2ec892.chunk.css.map": "/git_proyecto/static/css/2.7f2ec892.chunk.css.map",
-    "static/css/main.d6205ac6.chunk.css.map": "/git_proyecto/static/css/main.d6205ac6.chunk.css.map",
-    "static/js/2.dc0bfc3a.chunk.js.LICENSE.txt": "/git_proyecto/static/js/2.dc0bfc3a.chunk.js.LICENSE.txt"
+    "main.css": "/proyectoweb/static/css/main.4cea5a91.chunk.css",
+    "main.js": "/proyectoweb/static/js/main.1bbf3b93.chunk.js",
+    "main.js.map": "/proyectoweb/static/js/main.1bbf3b93.chunk.js.map",
+    "runtime-main.js": "/proyectoweb/static/js/runtime-main.0bd7e23b.js",
+    "runtime-main.js.map": "/proyectoweb/static/js/runtime-main.0bd7e23b.js.map",
+    "static/css/2.7f2ec892.chunk.css": "/proyectoweb/static/css/2.7f2ec892.chunk.css",
+    "static/js/2.283b1227.chunk.js": "/proyectoweb/static/js/2.283b1227.chunk.js",
+    "static/js/2.283b1227.chunk.js.map": "/proyectoweb/static/js/2.283b1227.chunk.js.map",
+    "static/js/3.f5a0577d.chunk.js": "/proyectoweb/static/js/3.f5a0577d.chunk.js",
+    "static/js/3.f5a0577d.chunk.js.map": "/proyectoweb/static/js/3.f5a0577d.chunk.js.map",
+    "index.html": "/proyectoweb/index.html",
+    "static/css/2.7f2ec892.chunk.css.map": "/proyectoweb/static/css/2.7f2ec892.chunk.css.map",
+    "static/css/main.4cea5a91.chunk.css.map": "/proyectoweb/static/css/main.4cea5a91.chunk.css.map",
+    "static/js/2.283b1227.chunk.js.LICENSE.txt": "/proyectoweb/static/js/2.283b1227.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fbc92494.js",
+    "static/js/runtime-main.0bd7e23b.js",
     "static/css/2.7f2ec892.chunk.css",
-    "static/js/2.dc0bfc3a.chunk.js",
-    "static/css/main.d6205ac6.chunk.css",
-    "static/js/main.7d87c66c.chunk.js"
+    "static/js/2.283b1227.chunk.js",
+    "static/css/main.4cea5a91.chunk.css",
+    "static/js/main.1bbf3b93.chunk.js"
   ]
 }
