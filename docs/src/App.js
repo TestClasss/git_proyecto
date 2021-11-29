@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 import RedirectUser from './pages/redirect/redirect';
 import Private from './Components/PrivateRoute/PrivateRoute';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
 import Create from './pages/Create/Create';
@@ -21,7 +21,7 @@ function App() {
   
   
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>        
         <Route path="/login" element={<Login />} />
         
@@ -34,7 +34,7 @@ function App() {
         <Route path="/Owned"  element={<Private role="admin"><Owned  /></Private>} />
         <Route path="*" element={<NotFound />}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
