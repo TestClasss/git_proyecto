@@ -3,7 +3,8 @@ import Icon from '../Icon/Icon';
 import Heart from './heart';
 
 const Allpostcard = ({identify, post, image, date, description, likes=[], user }) => {
-    
+    const words = ["gp26_user"];
+
     const clickHandler = () => {
         console.log("click");
         console.log(likes);
@@ -18,7 +19,7 @@ const Allpostcard = ({identify, post, image, date, description, likes=[], user }
 
             <div className ="w-max right-8 mt-1  flex flex-row absolute lg:text-4xl gap-2">
                 <p >{likes.length} </p>
-                <Heart identifier={identify} likes={likes} o/>
+                <Heart identifier={identify} active={likes.findIndex(like => like.username === words[0] ) != -1} />
                 <Icon type="comment"></Icon>
                 <Icon type="fav"></Icon>
             </div>

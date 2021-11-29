@@ -6,25 +6,17 @@ import { IoHeartOutline} from 'react-icons/io5';
 
 
 
-const Heart = ({identifier, likes=[]}) => {
+const Heart = ({identifier, active}) => {
    
     const newtoken = localStorage.getItem('token');
+    
     const [temporal, setTemporal] = useState(null);
-    const words = ["gp26_user"];
-    const isFav = likes.findIndex(like => like.username === words[0] ) != -1 ? true : false
-    const isLiked = temporal != null ? temporal : isFav
+    const showVisible = temporal !== null? temporal : active;
 
     useEffect(() => {
-        setTemporal(isLiked);
-    }, [ isLiked, likes]);
+        setTemporal(active);
+    }, [active, identifier]);
 
-   
-    
-
-
-    
-    
-   
     // const showVisible = temporal !== null? temporal : active;
     
     // useEffect(() => {
@@ -36,10 +28,7 @@ const Heart = ({identifier, likes=[]}) => {
         // setTemporal(!active);
         console.log(temporal);
         console.log(data);
-        console.log("estos son los likes",likes);
-        console.log("este es is fav",isFav);
-        console.log("este es el username", words[0]);
-        setTemporal(!isLiked);
+        setTemporal(!active);
         
         
         
@@ -50,12 +39,20 @@ const Heart = ({identifier, likes=[]}) => {
     }
 
 
-return (
-    <IoHeartOutline onClick={data} className={`cursor-pointer ${isLiked ? "text-red-400" : "text-gray-400"} `}/>
-   
+    return (
     
-
-)
+        !showVisible?
+                    <span>
+                        <IoHeartOutline onClick={data} className="cursor-pointer text-gray-400 text-opacity-50 hover:text-red-600 hover:text-opacity-1 transition-all transform hover:scale-125"/>
+                    </span> :
+                    <span>
+                        <IoHeartOutline onClick={data} className="cursor-pointer text-red-600 transition-all hover:text-gray-400 transform hover:scale-125"/>
+    
+                    </span>
+       
+        
+    
+    )
 };
 
 export default Heart;
