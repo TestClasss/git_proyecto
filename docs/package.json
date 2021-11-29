@@ -2,12 +2,14 @@
   "name": "proyectopw",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nicolas2321-ux.github.io/git_proyecto/",
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@emotion/react": "^11.7.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.2.3",
     "history": "^5.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -21,7 +23,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs"
   },
   "eslintConfig": {
     "extends": [
