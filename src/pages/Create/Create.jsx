@@ -28,40 +28,41 @@ const onSubmitHandler =  async (e) => {
 const navigate = useNavigate();
 
 
-return (
-    <div>
-        <form onSubmit={onSubmitHandler}>
-            <h2>Crea una nueva publicacion!</h2>
-            <input 
-                type="text"
-                placeholder="tittle"
-                value={tittle}
-                onChange={(e) => onChange(e, newTittle)}
-            
-            />
-            <input 
-                type="text"
-                placeholder="description"
-                value={description}
-                onChange={(e) => onChange(e, newDescription)}
-            
-            />
-            <input 
-                type="text"
-                placeholder="image"
-                value={image}
-                onChange={(e) => onChange(e, newImage)}
-            
-            />
+return (    
+    <div className = "w-screen h-screen py-20 px-10">
+        <div className ="border border-bluegray-200 border shadow-xl mt-8 lg:mt-24 m-auto h-max lg:w-4/12 flex flex-none flex-col p-8">
+            <form onSubmit={onSubmitHandler}>
+                <h2 className="my-4 font-RobotoSlab text-3xl w-m">Crea una nueva publicacion!</h2>
+                <input 
+                    type="text"
+                    placeholder="tittle"
+                    value={tittle}
+                    onChange={(e) => onChange(e, newTittle)}
+                    className="border w-3/4 mb-10 m-5 p-2 text-md"
+                    />
+                <input 
+                    type="text"
+                    placeholder="description"
+                    value={description}
+                    onChange={(e) => onChange(e, newDescription)}
+                    className="border w-3/4 mb-10 m-5 p-2 text-md"
+                    />
+                <input 
+                    type="text"
+                    placeholder="image"
+                    value={image}
+                    onChange={(e) => onChange(e, newImage)}
+                    className="border w-3/4 mb-10 m-5 p-2 text-md"
+                    />
 
-            <button type="submit">create</button>
 
+                <button type="submit" className ="mx-4 w-max lg:w-1/3 transition rounded border border-blue-500 duration-300 ease-in-out text-lg text-extrabold uppercase bg-blue-500 hover:bg-blue-700 py-2 px-4 text-gray-100">create</button>
+                
+                <button onClick={() => navigate('/admin')} className='mx-4 w-max lg:w-1/3 transition rounded border border-blue-500 duration-300 ease-in-out text-lg text-extrabold uppercase bg-blue-500 hover:bg-blue-700 py-2 px-4 text-gray-100'>back</button>
+            </form>
             
-        </form>
-            <button onClick={() => navigate('/admin')} className='bg-red-900'>back</button>
-        
-    </div>
-    
+        </div>
+    </div>   
 )
 
 

@@ -17,12 +17,13 @@ export default class Icon extends React.Component {
     
 
     render() {
-
+        
         if(this.props.type == "like"){
+            const {getlike} = this.props;
             return(
                 this.state.like ? 
                 <span>
-                    <IoHeartOutline onClick = {()=>{this.setState({like: !this.state.like})}} className="cursor-pointer text-gray-400 text-opacity-50 hover:text-red-600 hover:text-opacity-1 transition-all transform hover:scale-125"/>
+                    <IoHeartOutline onClick = {()=>{this.setState({like: !this.state.like})} } onAuxClick={getlike} className="cursor-pointer text-gray-400 text-opacity-50 hover:text-red-600 hover:text-opacity-1 transition-all transform hover:scale-125"/>
                 </span> : 
                 <span>
                     <AiTwotoneHeart onClick = {()=>{this.setState({like: !this.state.like})}} className="cursor-pointer text-red-600 transition-all transform hover:scale-125"/>
