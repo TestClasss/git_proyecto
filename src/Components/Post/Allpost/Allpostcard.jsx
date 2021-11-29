@@ -1,8 +1,16 @@
 import { useNavigate } from 'react-router-dom'
 import Icon from '../Icon/Icon';
+import Heart from './heart';
 
 const Allpostcard = ({identify, post, image, date, description, likes=[], user }) => {
-    
+    const words = ["gp26_user"];
+
+    const clickHandler = () => {
+        console.log("click");
+        console.log(likes);
+    }
+
+
     const navigate = useNavigate();
     return (
         <div className ="w-9/12 p-8 rounded-xl shadow-xl border border-coolgray-400 my-6 bg-white relative">
@@ -10,8 +18,8 @@ const Allpostcard = ({identify, post, image, date, description, likes=[], user }
             <img className="rounded my-2 lg:my-8 m-auto" src = {image} alt = {`Image posted from user ${user.username} `} />
 
             <div className ="w-max right-8 mt-1  flex flex-row absolute lg:text-4xl gap-2">
-                <p>{likes.length}</p>
-                <Icon type="like"></Icon>
+                <p >{likes.length} </p>
+                <Heart identifier={identify} active={likes.findIndex(like => like.username === words[0] ) != -1} />
                 <Icon type="comment"></Icon>
                 <Icon type="fav"></Icon>
             </div>
