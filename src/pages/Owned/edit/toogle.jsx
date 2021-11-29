@@ -14,11 +14,16 @@ const Toogle = ({identifier, active}) => {
     useEffect(() => {
         setTemporal(active);
     }, [active, identifier]);
+
+    
     
     const data = async () => {
         const data =  await usetoogle(identifier, newtoken);
         setTemporal(!active);
-        console.log(temporal);
+        // console.log(temporal);
+        console.log(data);
+        
+       
     }
 
 
